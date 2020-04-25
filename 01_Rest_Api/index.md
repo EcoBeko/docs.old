@@ -22,3 +22,4 @@ This document describes a REST Api abstraction of this system.
   - [validate](./02_Token/01_validate.md)
 - posts/
   - [fetch-portion](./03_Posts/01_fetch-portion.md)
+  - [fetch-one](./03_Posts/02_fetch-one.md)

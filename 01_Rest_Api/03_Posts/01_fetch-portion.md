@@ -52,6 +52,18 @@ HTTP code: 206
   message: "Success",
   posts: [
     // data
+    {
+      title: "post-title",
+      article: "post-article",
+      owner: {
+        name: "owner-name",
+        surname: "owner-surname",
+        avatar: "owner-avatar",
+      },
+      likes: 0,
+      image: "post-image",
+      time: "post-time"
+    }
   ]
 }
 ```
