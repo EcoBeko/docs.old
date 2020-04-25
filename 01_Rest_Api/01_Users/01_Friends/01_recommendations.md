@@ -28,6 +28,12 @@ HTTP code: 204
   message: "No close friends"
   users: [
     // random users
+    {
+      name: "user-name",
+      surname: "user-surname",
+      phone: "user-phone",
+      avatar: "user-avatar",
+    }
   ]
 }
 ```
@@ -42,6 +48,12 @@ HTTP code: 206
   message: "Success",
   users: [
     // closely related users
+    {
+      name: "user-name",
+      surname: "user-surname",
+      phone: "user-phone",
+      avatar: "user-avatar",
+    }
   ]
 }
 ```
