@@ -1,22 +1,18 @@
-# api/users/fetch/:phone (GET)
+# api/users/fetch (GET)
 
 ## Description
 
-Fetch user data by the given :phone url parameter
+Fetch user data by the given. User's info will be held in token
 
-|    Note    | Value |
-| :--------: | :---: |
-| Need Token |  Yes  |
-| Test route |  No   |
+|    Note    |  Value  |
+| :--------: | :-----: |
+| Need Token | **Yes** |
+| Test route |   No    |
 
 ## Request example
 
-| Parameter | Description                                            |
-| :-------: | ------------------------------------------------------ |
-|   phone   | Following Kazakhstan's phone pattern (omitting prefix) |
-
 ```HTTP
-https://domain.name/api/users/fetch/7086144672
+https://domain.name/api/users/fetch
 ```
 
 ## Response examples
@@ -24,6 +20,8 @@ https://domain.name/api/users/fetch/7086144672
 | Response Status code | Description         |
 | :------------------: | ------------------- |
 |         200          | Success             |
+|         401          | No token presented  |
+|         403          | Bad token           |
 |         404          | User doesn't exists |
 
 ### Created
@@ -48,6 +46,28 @@ HTTP code: 200
       waste: 0.0
     }
   }
+}
+```
+
+### Unauthorized
+
+HTTP code: 401
+
+```js
+{
+  status: false,
+  message: "No token presented"
+}
+```
+
+### Token is invalid
+
+HTTP code: 403
+
+```js
+{
+  status: false,
+  message: "Bad token"
 }
 ```
 
