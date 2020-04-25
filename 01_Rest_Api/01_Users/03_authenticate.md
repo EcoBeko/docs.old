@@ -1,8 +1,8 @@
-# api/users/register (POST)
+# api/users/authenticate (POST)
 
 ## Description
 
-Register a new user
+Validate user credentials and send access token
 
 |    Note    | Value |
 | :--------: | :---: |
@@ -13,23 +13,13 @@ Register a new user
 
 | Parameter | Description                                            |
 | :-------: | ------------------------------------------------------ |
-|   name    | User's name                                            |
-|  surname  | User's surname                                         |
-|   role    | User's role                                            |
-| password  | User's password                                        |
-|  gender   | 1 for male, 0 for female                               |
 |   phone   | Following Kazakhstan's phone pattern (omitting prefix) |
-| birthday  | Only date in format DD-MM-YYYY                         |
+| password  | User's password                                        |
 
 ```js
 {
-  name: "Ansar",
-  surname: "Ryspekov",
-  role: "user",
-  password: "some-password",
-  gender: 1,
   phone: "7086144672",
-  birthday: "19-01-2001"
+  password: "some-password"
 }
 ```
 
@@ -37,18 +27,19 @@ Register a new user
 
 | Response Status code | Description                             |
 | :------------------: | --------------------------------------- |
-|         201          | Created                                 |
+|         200          | Success                                 |
 |         400          | Phone number exists or validation error |
 |         412          | Request conditions are not met          |
 
 ### Created
 
-HTTP code: 201
+HTTP code: 200
 
 ```js
 {
   status: true,
-  message: "User created"
+  message: "Token created",
+  token: "token-string"
 }
 ```
 
@@ -71,16 +62,5 @@ HTTP code: 400
 {
   status: false,
   message: "Data validation error"
-}
-```
-
-### Request conditions are not met
-
-HTTP code: 412
-
-```js
-{
-  status: false,
-  message: "Request conditions are not met"
 }
 ```

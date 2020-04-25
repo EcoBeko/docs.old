@@ -29,13 +29,17 @@ Validates user credentials
 | :------------------: | ----------------------------------------- |
 |         204          | Success                                   |
 |         406          | Incorrect password or user doesn't exists |
+|         412          | Request conditions are not met            |
 
 ### Success
 
 HTTP Code: 204
 
 ```js
-// no content
+{
+  status: true,
+  message: "Credentials are valid"
+}
 ```
 
 ### Incorrect password
@@ -44,7 +48,8 @@ HTTP Code: 406
 
 ```js
 {
-  error: "Password is incorrect"
+  status: false,
+  message: "Password is incorrect"
 }
 ```
 
@@ -54,6 +59,18 @@ HTTP Code: 406
 
 ```js
 {
-  error: "User does not exists"
+  status: false,
+  message: "User does not exists";
+}
+```
+
+### Request conditions are not met
+
+HTTP code: 412
+
+```js
+{
+  status: false,
+  message: "Request conditions are not met"
 }
 ```
