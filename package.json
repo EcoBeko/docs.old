@@ -1,8 +1,7 @@
 {
-  "name": "portal.sdu.docs",
+  "name": "eco-beko.docs",
   "private": true,
   "version": "1.0.0",
-  "description": "SDU's documentation",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/benzo-gs1/portal.sdu.docs.git"
