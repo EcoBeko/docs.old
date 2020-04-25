@@ -10,6 +10,8 @@ This document describes a REST Api abstraction of this system.
   - [authenticate](./01_Users/03_authenticate.md)
   - [fetch](./01_Users/04_fetch.md)
   - [update-photo](./01_Users/05_update-photo.md)
+  - [update-info](./01_Users/06_update-info.md)
+  - [update-credentials](./01_Users/07_update-credentials.md)
   - friends/
     - [recommendations](./01_Users/01_Friends/01_recommendations.md)
     - [fetch](./01_Users/01_Friends/02_fetch.md)
