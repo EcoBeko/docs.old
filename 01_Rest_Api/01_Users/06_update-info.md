@@ -1,8 +1,8 @@
-# api/users/update-photo (PUT)
+# api/users/update (PUT)
 
 ## Description
 
-Update user's avatar
+Update user's info
 
 |    Note    |  Value  |
 | :--------: | :-----: |
@@ -11,13 +11,19 @@ Update user's avatar
 
 ## Request example
 
-| Parameter | Description                |
-| :-------: | -------------------------- |
-|  avatar   | Hash sum of the new avatar |
+| Parameter | Description               |
+| :-------: | ------------------------- |
+|   name    | User's name               |
+|  surname  | User's surname            |
+|  gender   | 1 for male, 0 for female  |
+| birthday  | Date in format dd-mm-yyyy |
 
 ```js
 {
-  avatar: "some-avatar",
+  name: "user-name",
+  surname: "user-surname",
+  gender: "user-gender",
+  birthday: "user-birthday",
 }
 ```
 
@@ -37,7 +43,7 @@ HTTP code: 200
 ```js
 {
   status: true,
-  message: "Avatar updated"
+  message: "User's info updated"
 }
 ```
 
