@@ -11,12 +11,12 @@ Get friends recommendations for user
 
 ## Response examples
 
-| Response Status code | Description                      |
-| :------------------: | -------------------------------- |
-|         204          | No close friends, random is used |
-|         206          | Success                          |
-|         401          | No token presented               |
-|         403          | Token presented, but is invalid  |
+| Response Status code | Description      |
+| :------------------: | ---------------- |
+|         204          | No close friends |
+|         206          | Success          |
+|         401          | No token         |
+|         403          | Unauthorized     |
 
 ### Created
 
@@ -58,7 +58,7 @@ HTTP code: 206
 }
 ```
 
-### Unauthorized
+### No token
 
 HTTP code: 401
 
@@ -69,7 +69,7 @@ HTTP code: 401
 }
 ```
 
-### Token is invalid
+### Unauthorized
 
 HTTP code: 403
 

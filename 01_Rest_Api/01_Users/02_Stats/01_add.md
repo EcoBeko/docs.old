@@ -27,12 +27,12 @@ Update user statistics
 
 ## Response examples
 
-| Response Status code | Description                     |
-| :------------------: | ------------------------------- |
-|         202          | Added                           |
-|         401          | No token presented              |
-|         403          | Token presented, but is invalid |
-|         412          | Request conditions are not met  |
+| Response Status code | Description                    |
+| :------------------: | ------------------------------ |
+|         202          | Added                          |
+|         401          | No token presented             |
+|         403          | Unauthorized                   |
+|         412          | Request conditions are not met |
 
 ### Added
 

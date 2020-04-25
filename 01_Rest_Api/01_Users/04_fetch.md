@@ -15,7 +15,7 @@ Fetch user data by the given. User's info will be held in token
 | :------------------: | ------------------- |
 |         200          | Success             |
 |         401          | No token presented  |
-|         403          | Bad token           |
+|         403          | Unauthorized        |
 |         404          | User doesn't exists |
 
 ### Created
@@ -43,7 +43,7 @@ HTTP code: 200
 }
 ```
 
-### Unauthorized
+### No token
 
 HTTP code: 401
 
@@ -54,7 +54,7 @@ HTTP code: 401
 }
 ```
 
-### Token is invalid
+### Unauthorized
 
 HTTP code: 403
 
