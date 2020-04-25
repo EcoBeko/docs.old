@@ -35,11 +35,12 @@ Register a new user
 
 ## Response examples
 
-| Response Status code | Description                             |
-| :------------------: | --------------------------------------- |
-|         201          | Created                                 |
-|         400          | Phone number exists or validation error |
-|         412          | Request conditions are not met          |
+| Response Status code | Description                    |
+| :------------------: | ------------------------------ |
+|         201          | Created                        |
+|         400          | Phone number exists            |
+|         406          | Validation error               |
+|         412          | Request conditions are not met |
 
 ### Created
 
@@ -65,7 +66,7 @@ HTTP code: 400
 
 ### Validation error
 
-HTTP code: 400
+HTTP code: 406
 
 ```js
 {

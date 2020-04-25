@@ -25,11 +25,12 @@ Validates user credentials
 
 ## Response examples
 
-| Response Status code | Description                               |
-| :------------------: | ----------------------------------------- |
-|         204          | Success                                   |
-|         406          | Incorrect password or user doesn't exists |
-|         412          | Request conditions are not met            |
+| Response Status code | Description                    |
+| :------------------: | ------------------------------ |
+|         204          | Success                        |
+|         400          | Incorrect password             |
+|         404          | User doesn't exists            |
+|         412          | Request conditions are not met |
 
 ### Success
 
@@ -44,7 +45,7 @@ HTTP Code: 204
 
 ### Incorrect password
 
-HTTP Code: 406
+HTTP Code: 400
 
 ```js
 {
@@ -55,7 +56,7 @@ HTTP Code: 406
 
 ### User doesn't exists
 
-HTTP Code: 406
+HTTP Code: 404
 
 ```js
 {
