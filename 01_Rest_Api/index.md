@@ -11,6 +11,8 @@ This document describes a REST Api abstraction of this system.
   - [fetch](./01_Users/04_fetch.md)
   - friends/
     - [recommendations](./01_Users/01_Friends/01_recommendations.md)
+    - [fetch](./01_Users/01_Friends/02_fetch.md)
+    - [update](./01_Users/01_Friends/03_update.md)
   - stats/
     - [add](./01_Users/02_Stats/01_add.md)
 - tokens/
