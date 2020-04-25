@@ -9,12 +9,6 @@ Fetch user data by the given. User's info will be held in token
 | Need Token | **Yes** |
 | Test route |   No    |
 
-## Request example
-
-```HTTP
-https://domain.name/api/users/fetch
-```
-
 ## Response examples
 
 | Response Status code | Description         |
