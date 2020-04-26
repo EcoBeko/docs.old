@@ -31,9 +31,7 @@ Get points by their type (recycle, utilization)
 |         204          | No content                     |
 |         412          | Request conditions are not met |
 
-### Success
-
-HTTP code: 200
+### 200 - Success
 
 ```js
 {
@@ -55,9 +53,7 @@ HTTP code: 200
 }
 ```
 
-### No Content
-
-HTTP code: 204
+### 204 - No Content
 
 ```js
 {
@@ -69,9 +65,7 @@ HTTP code: 204
 }
 ```
 
-### Request conditions are not met
-
-HTTP code: 412
+### 412 - Request conditions are not met
 
 ```js
 {
