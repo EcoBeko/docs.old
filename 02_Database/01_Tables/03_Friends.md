@@ -61,6 +61,7 @@ Statuses:
       <ul>
         <li>Varchar2 (20)</li>
         <li>Not Null</li>
+        <li>Check for correction</li>
       </ul>
     </td>
     <td>Row status</td>
