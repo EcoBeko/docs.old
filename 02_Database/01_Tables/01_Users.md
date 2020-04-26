@@ -66,18 +66,6 @@ tr > td:first-of-type {
     <td>Encrypted password</td>
   </tr>
   <tr>
-    <td>stats_id</td>
-    <td>
-      <ul>
-        <li>Integer</li>
-        <li>Not Null</li>
-        <li>Unique</li>
-        <li>Foreign Key</li>
-      </ul>
-    </td>
-    <td>1 to 1 reference, Each user has one and only one row of his statistics. See <a href="./02_UserStats.md">User Stats</a></td>
-  </tr>
-  <tr>
     <td>gender</td>
     <td>
       <ul>

@@ -38,7 +38,7 @@ Statuses:
         <li>Foreign Key</li>
       </ul>
     </td>
-    <td>1 to 0 or many, users has 0 or more friends. See <a href="./01_Users.md">Users</a></td>
+    <td>1 to 0 or many, users has 0 or more friends. See <a href="./01_Users.md">Users</a>. On delete: CASCADE</td>
   </tr>
   <tr>
     <td>user_2_id</td>
@@ -49,7 +49,7 @@ Statuses:
         <li>Foreign Key</li>
       </ul>
     </td>
-    <td>1 to 0 or many, users has 0 or more friends. See <a href="./01_Users.md">Users</a></td>
+    <td>1 to 0 or many, users has 0 or more friends. See <a href="./01_Users.md">Users</a>. On delete: CASCADE</td>
   </tr>
   <tr>
     <td>last_time</td>

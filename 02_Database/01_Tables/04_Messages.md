@@ -32,7 +32,7 @@ tr > td:first-of-type {
         <li>Foreign Key</li>
       </ul>
     </td>
-    <td>Many messages are related to 1 friends relationship. See <a href="./03_Friends.md">Friends</a></td>
+    <td>Many messages are related to 1 friends relationship. See <a href="./03_Friends.md">Friends</a>. On delete: CASCADE</td>
   </tr>
   <tr>
     <td>owner</td>
