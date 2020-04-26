@@ -6,7 +6,8 @@ Table of contents:
 
 - [Changelog 🗒️](#changelog-%f0%9f%97%92%ef%b8%8f)
   - [v2.0.0](#v200)
-    - [v.2.5.0](#v250)
+    - [v2.5.0](#v250)
+    - [v2.6.0](#v260)
   - [v1.0.0](#v100)
   - [v0.0.0](#v000)
     - [v0.1.0](#v010)
@@ -16,7 +17,7 @@ Table of contents:
 
 - Docs scaffolded
 
-### v.2.5.0
+### v2.5.0
 
 - Base api finished
   - users
@@ -27,6 +28,12 @@ Table of contents:
   - points
     - wastes
   - chats
+
+### v2.6.0
+
+- DB schema defined
+- Base API implementation preparations
+- Front-end refactor preparations
 
 ## v1.0.0
 
