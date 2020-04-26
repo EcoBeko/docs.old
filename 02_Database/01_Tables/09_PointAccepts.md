@@ -1,4 +1,4 @@
-# Post comments
+# Point Accepts
 
 <style>
 tr > td:first-of-type {
@@ -24,45 +24,34 @@ tr > td:first-of-type {
     <td>Unique id</td>
   </tr>
   <tr>
-    <td>owner_id</td>
+    <td>waste_id</td>
     <td>
       <ul>
+        <li>Integer</li>
         <li>Not Null</li>
         <li>Foreign Key</li>
-        <li>Integer</li>
       </ul>
     </td>
-    <td>User's could write 0 or more posts. See <a href="./01_Users.md">Users</a></td>
+    <td>Waste could be used by 0 or more Points. See <a href="./08_WasteTypes.md">Waste Types</a></td>
   </tr>
   <tr>
-    <td>post_id</td>
+    <td>points_id</td>
     <td>
       <ul>
+        <li>Integer</li>
         <li>Not Null</li>
         <li>Foreign Key</li>
-        <li>Integer</li>
       </ul>
     </td>
-    <td>Posts could have 0 or more comments See <a href="./05_Posts.md">Posts</a></td>
+    <td>Points could accept 1 or more waste types See <a href="./07_Points.md">Points</a></td>
   </tr>
   <tr>
-    <td>text</td>
+    <td>price</td>
     <td>
       <ul>
-        <li>Varchar2 (1000)</li>
-        <li>Not Null</li>
+        <li>Decimal</li>
       </ul>
     </td>
-    <td>Comment itself</td>
-  </tr>
-  <tr>
-    <td>time</td>
-    <td>
-      <ul>
-        <li>Timestamp</li>
-        <li>Not Null</li>
-      </ul>
-    </td>
-    <td>Time of article creation</td>
+    <td>Acceptance price</td>
   </tr>
 </table>
