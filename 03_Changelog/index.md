@@ -6,10 +6,7 @@ Table of contents:
 
 - [Changelog 🗒️](#changelog-%f0%9f%97%92%ef%b8%8f)
   - [v2.0.0](#v200)
-    - [v2.1.0](#v210)
-    - [v2.2.0](#v220)
-    - [v2.3.0](#v230)
-    - [v.2.4.0](#v240)
+    - [v.2.5.0](#v250)
   - [v1.0.0](#v100)
   - [v0.0.0](#v000)
     - [v0.1.0](#v010)
@@ -19,21 +16,17 @@ Table of contents:
 
 - Docs scaffolded
 
-### v2.1.0
+### v.2.5.0
 
-- Users api defined
-
-### v2.2.0
-
-- Users/friends api defined
-
-### v2.3.0
-
-- Users/stats api defined
-
-### v.2.4.0
-
-- Token, posts, points api defined
+- Base api finished
+  - users
+    - stats
+    - friends
+  - token
+  - posts
+  - points
+    - wastes
+  - chats
 
 ## v1.0.0
 
