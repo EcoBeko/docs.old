@@ -1,4 +1,4 @@
-# api/posts/comments/fetch/:id (GET)
+# api/posts/:id/comments/fetch (GET)
 
 ## Description
 
