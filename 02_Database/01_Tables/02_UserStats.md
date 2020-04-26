@@ -6,11 +6,6 @@ tr > td:first-of-type {
 }
 </style>
 
-Statuses:
-
-- active - Statistics could be used
-- inactive - No use
-
 <table>
   <tr>
     <th>Columns</th>
@@ -57,15 +52,5 @@ Statuses:
       </ul>
     </td>
     <td>Amount of waste collected</td>
-  </tr>
-  <tr>
-    <td>status</td>
-    <td>
-      <ul>
-        <li>Varchar2 (20)</li>
-        <li>Not Null</li>
-      </ul>
-    </td>
-    <td>Row status</td>
   </tr>
 </table>

@@ -1,4 +1,4 @@
-# Posts
+# Post comments
 
 <style>
 tr > td:first-of-type {

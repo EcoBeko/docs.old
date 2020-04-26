@@ -6,11 +6,6 @@ tr > td:first-of-type {
 }
 </style>
 
-Statuses:
-
-- active - message is active
-- inactive - message is inactive
-
 <table>
   <tr>
     <th>Columns</th>
@@ -68,15 +63,5 @@ Statuses:
       </ul>
     </td>
     <td>Time of message creation</td>
-  </tr>
-  <tr>
-    <td>status</td>
-    <td>
-      <ul>
-        <li>Varchar2 (20)</li>
-        <li>Not Null</li>
-      </ul>
-    </td>
-    <td>Row status</td>
   </tr>
 </table>
