@@ -12,3 +12,5 @@ This document describes a database scheme and constraints.
 - [Messages](./01_Tables/04_Messages.md)
 - [Posts](./01_Tables/05_Posts.md)
 - [Post Comments](./01_Tables/06_PostComments.md)
+- [Points](./01_Tables/07_Points.md)
+- [Waste Types](./01_Tables/08_WasteTypes.md)
