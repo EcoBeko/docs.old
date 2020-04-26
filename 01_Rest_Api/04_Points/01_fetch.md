@@ -48,6 +48,9 @@ Get points by their type (recycle, utilization)
       type: "point-type",
       phone: "point-phone",
       additionalInfo: "point-additionalInfo",
+      longitude: 83.70,
+      latitude: 83.10,
+      icon: "point-icon"
     }
   ]
 }
