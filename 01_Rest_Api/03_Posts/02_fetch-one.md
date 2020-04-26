@@ -4,10 +4,10 @@
 
 Fetch single post by it's id
 
-|    Note    | Value |
-| :--------: | :---: |
-| Need Token |  Yes  |
-| Test route |  No   |
+|    Note    |  Value  |
+| :--------: | :-----: |
+| Need Token | **Yes** |
+| Test route |   No    |
 
 ## Request example
 
