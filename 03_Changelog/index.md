@@ -9,6 +9,7 @@ Table of contents:
     - [v2.1.0](#v210)
     - [v2.2.0](#v220)
     - [v2.3.0](#v230)
+    - [v.2.4.0](#v240)
   - [v1.0.0](#v100)
   - [v0.0.0](#v000)
     - [v0.1.0](#v010)
@@ -29,6 +30,10 @@ Table of contents:
 ### v2.3.0
 
 - Users/stats api defined
+
+### v.2.4.0
+
+- Token, posts, points api defined
 
 ## v1.0.0
 
