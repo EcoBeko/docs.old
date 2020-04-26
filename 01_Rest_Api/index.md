@@ -24,6 +24,8 @@ This document describes a REST Api abstraction of this system.
   - [fetch-portion](./03_Posts/01_fetch-portion.md)
   - [fetch-one](./03_Posts/02_fetch-one.md)
   - [write](./03_Posts/03_write.md)
+  - comments/
+    - [fetch/:id](./03_Posts/01_Comments/01_fetch.md)
 - points/
   - [fetch/:type](./04_Points/01_fetch.md)
   - wastes/

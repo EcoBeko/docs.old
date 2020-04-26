@@ -13,7 +13,7 @@ Retrieving chat messages
 
 | Parameter | Description                       |
 | :-------: | --------------------------------- |
-|    id     | Integer, friend's relationship id |
+|    :id    | Integer, friend's relationship id |
 
 ```http
 http://domain.name/api/fetch-chat/12

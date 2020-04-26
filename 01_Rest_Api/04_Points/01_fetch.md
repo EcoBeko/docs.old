@@ -13,6 +13,7 @@ Get points by their type (recycle, utilization)
 
 | Parameter | Description               |
 | :-------: | ------------------------- |
+|   :type   | Point type                |
 |   query   | Array of waste types ids' |
 
 ```js
