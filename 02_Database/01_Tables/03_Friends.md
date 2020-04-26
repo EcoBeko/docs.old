@@ -1,11 +1,5 @@
 # Friends
 
-<style>
-tr > td:first-of-type {
-  text-align: center;
-}
-</style>
-
 Statuses:
 
 - request - in a stage of request

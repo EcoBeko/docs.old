@@ -1,11 +1,5 @@
 # Post comments
 
-<style>
-tr > td:first-of-type {
-  text-align: center;
-}
-</style>
-
 <table>
   <tr>
     <th>Columns</th>
