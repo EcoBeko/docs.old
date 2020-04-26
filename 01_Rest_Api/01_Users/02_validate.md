@@ -1,4 +1,4 @@
-# api/users/validate (POST)
+# api/users/validate (GET)
 
 ## Description
 

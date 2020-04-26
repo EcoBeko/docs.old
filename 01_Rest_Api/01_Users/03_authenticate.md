@@ -1,4 +1,4 @@
-# api/users/authenticate (POST)
+# api/users/authenticate (GET)
 
 ## Description
 
