@@ -1,0 +1,80 @@
+# api/chats/fetch-chat/:id (GET)
+
+## Description
+
+Retrieving chat messages
+
+|    Note    |  Value  |
+| :--------: | :-----: |
+| Need Token | **Yes** |
+| Test route |   No    |
+
+## Request example
+
+| Parameter | Description                       |
+| :-------: | --------------------------------- |
+|    id     | Integer, friend's relationship id |
+
+```http
+http://domain.name/api/fetch-chat/12
+```
+
+## Response examples
+
+| Response Status code | Description    |
+| :------------------: | -------------- |
+|         200          | Success        |
+|         401          | No Token       |
+|         403          | Unauthorized   |
+|         404          | Chat not found |
+
+### 200 - Success
+
+```js
+{
+  status: true,
+  message: "Success",
+  friend: {
+    name: "friend-name",
+    surname: "friend-surname",
+    phone: "friend-phone",
+    avatar: "friend-avatar",
+    lastTime: "last-time"
+  },
+  messages: [
+    // list of messages sorted by timestamp
+    {
+      owner: "you|friend",
+      message: "message",
+      time: "time"
+    }
+  ]
+}
+```
+
+### 401 - No Token
+
+```js
+{
+  status: false,
+  message: "No token presented"
+}
+```
+
+### 403 - Unauthorized
+
+```js
+{
+  status: false,
+  message: "Bad token"
+}
+```
+
+### 404 - Not found
+
+```js
+{
+  status: false,
+  message: "Chat not found"
+}
+```

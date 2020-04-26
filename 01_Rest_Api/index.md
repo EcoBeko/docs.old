@@ -25,6 +25,8 @@ This document describes a REST Api abstraction of this system.
   - [fetch-one](./03_Posts/02_fetch-one.md)
   - [write](./03_Posts/03_write.md)
 - points/
-  - [fetch/:save-type](./04_Points/01_fetch.md)
+  - [fetch/:type](./04_Points/01_fetch.md)
   - wastes/
     - [fetch](./04_Points/01_Wastes/01_fetch.md)
+- chats/
+  - [fetch-chat/:id](./05_Chats/01_fetch-chat.md)

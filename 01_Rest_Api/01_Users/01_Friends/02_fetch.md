@@ -26,6 +26,7 @@ Fetch user's friends list
   users: [
     // all user's friends
     {
+      id: 1,
       phone: "user-phone",
       name: "user-name",
       surname: "user-surname",
