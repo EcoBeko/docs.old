@@ -32,7 +32,7 @@ tr > td:first-of-type {
         <li>Foreign Key</li>
       </ul>
     </td>
-    <td>Waste could be used by 0 or more Points. See <a href="./08_WasteTypes.md">Waste Types</a></td>
+    <td>Waste could be used by 0 or more Points. See <a href="./08_WasteTypes.md">Waste Types</a>. On Delete CASCADE</td>
   </tr>
   <tr>
     <td>points_id</td>
@@ -43,7 +43,7 @@ tr > td:first-of-type {
         <li>Foreign Key</li>
       </ul>
     </td>
-    <td>Points could accept 1 or more waste types See <a href="./07_Points.md">Points</a></td>
+    <td>Points could accept 1 or more waste types See <a href="./07_Points.md">Points</a>. On Delete CASCADE</td>
   </tr>
   <tr>
     <td>price</td>
