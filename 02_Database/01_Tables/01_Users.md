@@ -109,7 +109,7 @@ Statuses:
     <td>avatar</td>
     <td>
       <ul>
-        <li>Varchar2 (100)</li>
+        <li>Varchar2 (200)</li>
         <li>Not Null</li>
       </ul>
     </td>

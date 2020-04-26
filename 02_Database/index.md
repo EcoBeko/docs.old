@@ -8,3 +8,6 @@ This document describes a database scheme and constraints.
 
 - [Users](./01_Tables/01_Users.md)
 - [User Statistics](./01_Tables/02_UserStats.md)
+- [Friends](./01_Tables/03_Friends.md)
+- [Messages](./01_Tables/04_Messages.md)
+-

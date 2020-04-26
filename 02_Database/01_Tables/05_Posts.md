@@ -1,4 +1,4 @@
-# Messages
+# Posts
 
 <style>
 tr > td:first-of-type {
@@ -8,8 +8,8 @@ tr > td:first-of-type {
 
 Statuses:
 
-- active - message is active
-- inactive - message is inactive
+- active - post is active
+- inactive - post is inactive
 
 <table>
   <tr>
@@ -29,35 +29,35 @@ Statuses:
     <td>Unique id</td>
   </tr>
   <tr>
-    <td>friends_id</td>
+    <td>owner_id</td>
     <td>
       <ul>
-        <li>Integer</li>
         <li>Not Null</li>
         <li>Foreign Key</li>
+        <li>Integer</li>
       </ul>
     </td>
-    <td>Many messages are related to 1 friends relationship. See <a href="./03_Friends.md">Friends</a></td>
+    <td>User's could write 0 or more posts. See <a href="./01_Users.md">Users</a></td>
   </tr>
   <tr>
-    <td>owner</td>
+    <td>title</td>
     <td>
       <ul>
-        <li>Varchar2 (40)</li>
+        <li>Varchar2 (50)</li>
         <li>Not Null</li>
       </ul>
     </td>
-    <td>Sender's full name</td>
+    <td>Article's title</td>
   </tr>
   <tr>
-    <td>message</td>
+    <td>article</td>
     <td>
       <ul>
-        <li>Varchar2 (1000)</li>
+        <li>Varchar2 (4000)</li>
         <li>Not Null</li>
       </ul>
     </td>
-    <td>Message's content</td>
+    <td>Article itself</td>
   </tr>
   <tr>
     <td>time</td>
@@ -67,7 +67,27 @@ Statuses:
         <li>Not Null</li>
       </ul>
     </td>
-    <td>Time of message creation</td>
+    <td>Time of article creation</td>
+  </tr>
+  <tr>
+    <td>likes</td>
+    <td>
+      <ul>
+        <li>Integer</li>
+        <li>Not Null</li>
+      </ul>
+    </td>
+    <td>Amount of likes</td>
+  </tr>
+  <tr>
+    <td>image</td>
+    <td>
+      <ul>
+        <li>Varchar2 (200)</li>
+        <li>Not Null</li>
+      </ul>
+    </td>
+    <td>Amount of likes</td>
   </tr>
   <tr>
     <td>status</td>
