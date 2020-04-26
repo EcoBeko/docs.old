@@ -11,9 +11,9 @@ Update user's avatar
 
 ## Request example
 
-| Parameter | Description                |
-| :-------: | -------------------------- |
-|  avatar   | Hash sum of the new avatar |
+| Parameter | Description                        |
+| :-------: | ---------------------------------- |
+|  avatar   | String, hash sum of the new avatar |
 
 ```js
 {
@@ -27,12 +27,10 @@ Update user's avatar
 | :------------------: | ------------------------------ |
 |         200          | Updated                        |
 |         401          | No Token                       |
-|         403          | Unauthorized (bad token)       |
+|         403          | Unauthorized                   |
 |         412          | Request conditions are not met |
 
-### Updated
-
-HTTP code: 200
+### 200 - Updated
 
 ```js
 {
@@ -41,9 +39,7 @@ HTTP code: 200
 }
 ```
 
-### No token
-
-HTTP code: 401
+### 401 - No token
 
 ```js
 {
@@ -52,9 +48,7 @@ HTTP code: 401
 }
 ```
 
-### Unauthorized
-
-HTTP code: 403
+### 403 - Unauthorized
 
 ```js
 {
@@ -63,9 +57,7 @@ HTTP code: 403
 }
 ```
 
-### Request conditions are not met
-
-HTTP code: 412
+### 412 - Request conditions are not met
 
 ```js
 {

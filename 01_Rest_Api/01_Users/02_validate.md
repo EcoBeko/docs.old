@@ -11,10 +11,10 @@ Validates user credentials
 
 ## Request example
 
-| Parameter | Description                                            |
-| :-------: | ------------------------------------------------------ |
-|   phone   | Following Kazakhstan's phone pattern (omitting prefix) |
-| password  | User's password                                        |
+| Parameter | Description                                                    |
+| :-------: | -------------------------------------------------------------- |
+|   phone   | String, following Kazakhstan's phone pattern (omitting prefix) |
+| password  | String, User's password                                        |
 
 ```js
 {
@@ -27,14 +27,12 @@ Validates user credentials
 
 | Response Status code | Description                    |
 | :------------------: | ------------------------------ |
-|         204          | Success                        |
-|         400          | Incorrect password             |
+|         200          | Success                        |
 |         404          | User doesn't exists            |
+|         406          | Incorrect password             |
 |         412          | Request conditions are not met |
 
-### Success
-
-HTTP Code: 204
+### 200 - Success
 
 ```js
 {
@@ -43,20 +41,7 @@ HTTP Code: 204
 }
 ```
 
-### Incorrect password
-
-HTTP Code: 400
-
-```js
-{
-  status: false,
-  message: "Password is incorrect"
-}
-```
-
-### User doesn't exists
-
-HTTP Code: 404
+### 404 - User doesn't exists
 
 ```js
 {
@@ -65,9 +50,16 @@ HTTP Code: 404
 }
 ```
 
-### Request conditions are not met
+### 406 - Incorrect password
 
-HTTP code: 412
+```js
+{
+  status: false,
+  message: "Password is incorrect"
+}
+```
+
+### 412 - Request conditions are not met
 
 ```js
 {

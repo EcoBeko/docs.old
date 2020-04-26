@@ -14,10 +14,12 @@ Update relationship status with friend
 | Parameter | Description                                                                  |
 | :-------: | ---------------------------------------------------------------------------- |
 |   phone   | Following Kazakhstan's phone pattern (omitting prefix). Friends phone number |
+|  action   | String. Represents new relationship status                                   |
 
 ```js
 {
   phone: "7086144672",
+  action: "request|remove|friends"
 }
 ```
 
@@ -27,13 +29,11 @@ Update relationship status with friend
 | :------------------: | ------------------------------ |
 |         200          | Updated                        |
 |         401          | No Token                       |
-|         403          | Unauthorized (bad token)       |
+|         403          | Unauthorized                   |
 |         404          | Phone number not exists        |
 |         412          | Request conditions are not met |
 
-### Updated
-
-HTTP code: 200
+### 200 - Updated
 
 ```js
 {
@@ -42,20 +42,7 @@ HTTP code: 200
 }
 ```
 
-### Phone number doesn't exists
-
-HTTP code: 400
-
-```js
-{
-  status: false,
-  message: "Phone number does not exists"
-}
-```
-
-### No token
-
-HTTP code: 401
+### 401 - No token
 
 ```js
 {
@@ -64,9 +51,7 @@ HTTP code: 401
 }
 ```
 
-### Unauthorized
-
-HTTP code: 403
+### 403 - Unauthorized
 
 ```js
 {
@@ -75,9 +60,16 @@ HTTP code: 403
 }
 ```
 
-### Request conditions are not met
+### 404 - Phone number doesn't exists
 
-HTTP code: 412
+```js
+{
+  status: false,
+  message: "Phone number does not exists"
+}
+```
+
+### 412 - Request conditions are not met
 
 ```js
 {

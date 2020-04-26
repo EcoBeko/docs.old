@@ -13,34 +13,12 @@ Get friends recommendations for user
 
 | Response Status code | Description      |
 | :------------------: | ---------------- |
+|         200          | Success          |
 |         204          | No close friends |
-|         206          | Success          |
 |         401          | No token         |
 |         403          | Unauthorized     |
 
-### Created
-
-HTTP code: 204
-
-```js
-{
-  status: true,
-  message: "No close friends"
-  users: [
-    // random users
-    {
-      name: "user-name",
-      surname: "user-surname",
-      phone: "user-phone",
-      avatar: "user-avatar",
-    }
-  ]
-}
-```
-
-### Success
-
-HTTP code: 206
+### 200 - Success
 
 ```js
 {
@@ -58,9 +36,25 @@ HTTP code: 206
 }
 ```
 
-### No token
+### 204 - No close friends
 
-HTTP code: 401
+```js
+{
+  status: true,
+  message: "No close friends"
+  users: [
+    // random users
+    {
+      name: "user-name",
+      surname: "user-surname",
+      phone: "user-phone",
+      avatar: "user-avatar",
+    }
+  ]
+}
+```
+
+### 401 - No token
 
 ```js
 {
@@ -69,9 +63,7 @@ HTTP code: 401
 }
 ```
 
-### Unauthorized
-
-HTTP code: 403
+### 403 - Unauthorized
 
 ```js
 {

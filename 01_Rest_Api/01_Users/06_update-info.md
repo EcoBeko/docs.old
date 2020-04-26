@@ -11,12 +11,12 @@ Update user's info
 
 ## Request example
 
-| Parameter | Description               |
-| :-------: | ------------------------- |
-|   name    | User's name               |
-|  surname  | User's surname            |
-|  gender   | 1 for male, 0 for female  |
-| birthday  | Date in format dd-mm-yyyy |
+| Parameter | Description                       |
+| :-------: | --------------------------------- |
+|   name    | String, user's name               |
+|  surname  | String, user's surname            |
+|  gender   | Integer, 1 for male, 0 for female |
+| birthday  | Date in format dd-mm-yyyy         |
 
 ```js
 {
@@ -33,12 +33,10 @@ Update user's info
 | :------------------: | ------------------------------ |
 |         200          | Updated                        |
 |         401          | No Token                       |
-|         403          | Unauthorized (bad token)       |
+|         403          | Unauthorized                   |
 |         412          | Request conditions are not met |
 
-### Updated
-
-HTTP code: 200
+### 200 - Updated
 
 ```js
 {
@@ -47,9 +45,7 @@ HTTP code: 200
 }
 ```
 
-### No token
-
-HTTP code: 401
+### 401 - No token
 
 ```js
 {
@@ -58,9 +54,7 @@ HTTP code: 401
 }
 ```
 
-### Unauthorized
-
-HTTP code: 403
+### 403 - Unauthorized
 
 ```js
 {
@@ -69,9 +63,7 @@ HTTP code: 403
 }
 ```
 
-### Request conditions are not met
-
-HTTP code: 412
+### 412 - Request conditions are not met
 
 ```js
 {

@@ -1,8 +1,8 @@
-# api/users/fetch (GET)
+# api/users/fetch-data (GET)
 
 ## Description
 
-Fetch user data by the given. User's info will be held in token
+Fetch user data for the specified user
 
 |    Note    |  Value  |
 | :--------: | :-----: |
@@ -11,16 +11,13 @@ Fetch user data by the given. User's info will be held in token
 
 ## Response examples
 
-| Response Status code | Description         |
-| :------------------: | ------------------- |
-|         200          | Success             |
-|         401          | No token presented  |
-|         403          | Unauthorized        |
-|         404          | User doesn't exists |
+| Response Status code | Description        |
+| :------------------: | ------------------ |
+|         200          | Success            |
+|         401          | No token presented |
+|         403          | Unauthorized       |
 
-### Created
-
-HTTP code: 200
+### 200 - Success
 
 ```js
 {
@@ -43,9 +40,7 @@ HTTP code: 200
 }
 ```
 
-### No token
-
-HTTP code: 401
+### 401 - No Token
 
 ```js
 {
@@ -54,24 +49,11 @@ HTTP code: 401
 }
 ```
 
-### Unauthorized
-
-HTTP code: 403
+### 403 - Unauthorized
 
 ```js
 {
   status: false,
   message: "Bad token"
-}
-```
-
-### User doesn't exists
-
-HTTP code: 404
-
-```js
-{
-  status: false,
-  message: "User does not exists"
 }
 ```

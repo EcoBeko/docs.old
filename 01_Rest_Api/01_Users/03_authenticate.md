@@ -11,10 +11,10 @@ Validate user credentials and send access token
 
 ## Request example
 
-| Parameter | Description                                            |
-| :-------: | ------------------------------------------------------ |
-|   phone   | Following Kazakhstan's phone pattern (omitting prefix) |
-| password  | User's password                                        |
+| Parameter | Description                                                    |
+| :-------: | -------------------------------------------------------------- |
+|   phone   | String, Following Kazakhstan's phone pattern (omitting prefix) |
+| password  | String, user's password                                        |
 
 ```js
 {
@@ -25,15 +25,14 @@ Validate user credentials and send access token
 
 ## Response examples
 
-| Response Status code | Description                             |
-| :------------------: | --------------------------------------- |
-|         200          | Success                                 |
-|         400          | Phone number exists or validation error |
-|         412          | Request conditions are not met          |
+| Response Status code | Description                    |
+| :------------------: | ------------------------------ |
+|         200          | Success                        |
+|         400          | Phone number exists            |
+|         406          | Validation error               |
+|         412          | Request conditions are not met |
 
-### Created
-
-HTTP code: 200
+### 200 - Success
 
 ```js
 {
@@ -43,9 +42,7 @@ HTTP code: 200
 }
 ```
 
-### Phone number exists
-
-HTTP code: 400
+### 400 - Phone number exists
 
 ```js
 {
@@ -54,13 +51,20 @@ HTTP code: 400
 }
 ```
 
-### Validation error
-
-HTTP code: 400
+### 406 - Validation error
 
 ```js
 {
   status: false,
   message: "Data validation error"
+}
+```
+
+### 412 - Request conditions are not met
+
+```js
+{
+  status: false,
+  message: "Request conditions are not met"
 }
 ```

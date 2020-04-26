@@ -11,10 +11,10 @@ Update user's password
 
 ## Request example
 
-|  Parameter  | Description           |
-| :---------: | --------------------- |
-| oldPassword | Old password to check |
-| newPassword | New password to set   |
+|  Parameter  | Description                   |
+| :---------: | ----------------------------- |
+| oldPassword | String, Old password to check |
+| newPassword | String, New password to set   |
 
 ```js
 {
@@ -28,14 +28,12 @@ Update user's password
 | Response Status code | Description                    |
 | :------------------: | ------------------------------ |
 |         200          | Updated                        |
-|         400          | Old password is incorrect      |
 |         401          | No Token                       |
 |         403          | Unauthorized (bad token)       |
+|         406          | Old password is incorrect      |
 |         412          | Request conditions are not met |
 
-### Updated
-
-HTTP code: 200
+### 200 - Updated
 
 ```js
 {
@@ -44,20 +42,7 @@ HTTP code: 200
 }
 ```
 
-### Password is incorrect
-
-HTTP code: 400
-
-```js
-{
-  status: false,
-  message: "Incorrect password"
-}
-```
-
-### No token
-
-HTTP code: 401
+### 401 - No Token
 
 ```js
 {
@@ -66,9 +51,7 @@ HTTP code: 401
 }
 ```
 
-### Unauthorized
-
-HTTP code: 403
+### 403 - Unauthorized
 
 ```js
 {
@@ -77,9 +60,16 @@ HTTP code: 403
 }
 ```
 
-### Request conditions are not met
+### 406 - Password is incorrect
 
-HTTP code: 412
+```js
+{
+  status: false,
+  message: "Incorrect password"
+}
+```
+
+### 412 - Request conditions are not met
 
 ```js
 {

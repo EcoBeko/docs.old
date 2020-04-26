@@ -11,21 +11,19 @@ Register a new user
 
 ## Request example
 
-| Parameter | Description                                            |
-| :-------: | ------------------------------------------------------ |
-|   name    | User's name                                            |
-|  surname  | User's surname                                         |
-|   role    | User's role                                            |
-| password  | User's password                                        |
-|  gender   | 1 for male, 0 for female                               |
-|   phone   | Following Kazakhstan's phone pattern (omitting prefix) |
-| birthday  | Only date in format DD-MM-YYYY                         |
+| Parameter | Description                                                    |
+| :-------: | -------------------------------------------------------------- |
+|   name    | String, user's name                                            |
+|  surname  | String, user's surname                                         |
+| password  | String, user's password                                        |
+|  gender   | Integer, 1 for male, 0 for female                              |
+|   phone   | String, following Kazakhstan's phone pattern (omitting prefix) |
+| birthday  | Date in format DD-MM-YYYY                                      |
 
 ```js
 {
   name: "Ansar",
   surname: "Ryspekov",
-  role: "user",
   password: "some-password",
   gender: 1,
   phone: "7086144672",
@@ -42,9 +40,7 @@ Register a new user
 |         406          | Validation error               |
 |         412          | Request conditions are not met |
 
-### Created
-
-HTTP code: 201
+### 201 - Created
 
 ```js
 {
@@ -53,9 +49,7 @@ HTTP code: 201
 }
 ```
 
-### Phone number exists
-
-HTTP code: 400
+### 400 - Phone number exists
 
 ```js
 {
@@ -64,9 +58,7 @@ HTTP code: 400
 }
 ```
 
-### Validation error
-
-HTTP code: 406
+### 406 - Validation error
 
 ```js
 {
@@ -75,9 +67,7 @@ HTTP code: 406
 }
 ```
 
-### Request conditions are not met
-
-HTTP code: 412
+### 412 - Request conditions are not met
 
 ```js
 {

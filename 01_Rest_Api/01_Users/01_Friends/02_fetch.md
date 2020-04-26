@@ -17,9 +17,7 @@ Fetch user's friends list
 |         401          | No Token                 |
 |         403          | Unauthorized (bad token) |
 
-### Created
-
-HTTP code: 201
+### 200 - Success
 
 ```js
 {
@@ -39,9 +37,7 @@ HTTP code: 201
 }
 ```
 
-### No token
-
-HTTP code: 401
+### 401 - No token
 
 ```js
 {
@@ -50,9 +46,7 @@ HTTP code: 401
 }
 ```
 
-### Unauthorized
-
-HTTP code: 403
+### 403 - Unauthorized
 
 ```js
 {

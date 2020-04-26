@@ -11,11 +11,11 @@ Update user statistics
 
 ## Request example
 
-| Parameter | Description            |
-| :-------: | ---------------------- |
-|   trees   | Amount of saved trees  |
-|  energy   | Amount of saved energy |
-|   waste   | Miscellaneous rubbish  |
+| Parameter | Description                   |
+| :-------: | ----------------------------- |
+|   trees   | Float, amount of saved trees  |
+|  energy   | Float, amount of saved energy |
+|   waste   | Float, miscellaneous rubbish  |
 
 ```js
 {
@@ -29,14 +29,12 @@ Update user statistics
 
 | Response Status code | Description                    |
 | :------------------: | ------------------------------ |
-|         202          | Added                          |
+|         200          | Added                          |
 |         401          | No token presented             |
 |         403          | Unauthorized                   |
 |         412          | Request conditions are not met |
 
-### Added
-
-HTTP code: 202
+### 200 - Added
 
 ```js
 {
@@ -45,9 +43,7 @@ HTTP code: 202
 }
 ```
 
-### No token presented
-
-HTTP code: 401
+### 401 - No token presented
 
 ```js
 {
@@ -56,9 +52,7 @@ HTTP code: 401
 }
 ```
 
-### Unauthorized
-
-HTTP code: 403
+### 403 - Unauthorized
 
 ```js
 {
@@ -67,9 +61,7 @@ HTTP code: 403
 }
 ```
 
-### Request conditions are not met
-
-HTTP code: 412
+### 412 - Request conditions are not met
 
 ```js
 {
