@@ -11,11 +11,11 @@ Create a new post
 
 ## Request example
 
-| Parameter | Description      |
-| :-------: | ---------------- |
-|   title   | Text             |
-|  article  | Long Text        |
-|   image   | Image's hash sum |
+| Parameter | Description                  |
+| :-------: | ---------------------------- |
+|   title   | String, title of the article |
+|  article  | String, article itself       |
+|   image   | String, image's hash sum     |
 
 ```js
 {
@@ -35,9 +35,7 @@ Create a new post
 |         406          | Validation failed               |
 |         412          | Request conditions are not met  |
 
-### Created
-
-HTTP code: 201
+### 201 - Created
 
 ```js
 {
@@ -46,9 +44,7 @@ HTTP code: 201
 }
 ```
 
-### No token
-
-HTTP code: 401
+### 401 - No Token
 
 ```js
 {
@@ -57,9 +53,7 @@ HTTP code: 401
 }
 ```
 
-### Unauthorized
-
-HTTP code: 403
+### 403 - Unauthorized
 
 ```js
 {
@@ -68,9 +62,7 @@ HTTP code: 403
 }
 ```
 
-### Validation failed
-
-HTTP code: 406
+### 406 - Validation failed
 
 ```js
 {
@@ -79,9 +71,7 @@ HTTP code: 406
 }
 ```
 
-### Request conditions are not met
-
-HTTP code: 412
+### 412 - Request conditions are not met
 
 ```js
 {

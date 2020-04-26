@@ -4,10 +4,10 @@
 
 Fetch single post by it's id
 
-|    Note    |  Value  |
-| :--------: | :-----: |
-| Need Token | **Yes** |
-| Test route |   No    |
+|    Note    | Value |
+| :--------: | :---: |
+| Need Token |  No   |
+| Test route |  No   |
 
 ## Request example
 
@@ -26,9 +26,7 @@ http://domain.name/api/posts/fetch-one/123
 |         200          | Success     |
 |         404          | Not-found   |
 
-### Success
-
-HTTP code: 200
+### 200 - Success
 
 ```js
 {
@@ -49,9 +47,7 @@ HTTP code: 200
 }
 ```
 
-### Not found
-
-HTTP code: 404
+### 404 Not found
 
 ```js
 {

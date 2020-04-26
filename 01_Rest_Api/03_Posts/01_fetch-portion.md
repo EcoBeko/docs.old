@@ -29,10 +29,9 @@ Fetch limited amount of posts
 |         206          | Success                         |
 |         401          | No token presented              |
 |         403          | Token presented, but is invalid |
+|         412          | Request conditions are not met  |
 
-### Created
-
-HTTP code: 204
+### 204 - No rows
 
 ```js
 {
@@ -42,9 +41,7 @@ HTTP code: 204
 }
 ```
 
-### Success
-
-HTTP code: 206
+### 206 - Success
 
 ```js
 {
@@ -68,9 +65,7 @@ HTTP code: 206
 }
 ```
 
-### Unauthorized
-
-HTTP code: 401
+### 401 - No Token
 
 ```js
 {
@@ -79,13 +74,20 @@ HTTP code: 401
 }
 ```
 
-### Token is invalid
-
-HTTP code: 403
+### 403 - Unauthorized
 
 ```js
 {
   status: false,
   message: "Bad token"
+}
+```
+
+### 412 - Request conditions are not met
+
+```js
+{
+  status: false,
+  message: "Request conditions are not met"
 }
 ```

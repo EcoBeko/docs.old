@@ -1,8 +1,8 @@
-# api/token/validate (GET)
+# api/token/validate (POST)
 
 ## Description
 
-Create a new post
+Validate a given token
 
 |    Note    | Value |
 | :--------: | :---: |
@@ -25,13 +25,11 @@ Create a new post
 
 | Response Status code | Description                    |
 | :------------------: | ------------------------------ |
-|         202          | Valid                          |
+|         200          | Valid                          |
 |         406          | Validation failed              |
 |         412          | Request conditions are not met |
 
-### Created
-
-HTTP code: 202
+### 200 - Valid
 
 ```js
 {
@@ -40,9 +38,7 @@ HTTP code: 202
 }
 ```
 
-### Validation failed
-
-HTTP code: 406
+### 406 - Validation failed
 
 ```js
 {
@@ -51,9 +47,7 @@ HTTP code: 406
 }
 ```
 
-### Request conditions are not met
-
-HTTP code: 412
+### 412 - Request conditions are not met
 
 ```js
 {

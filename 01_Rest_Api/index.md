@@ -5,10 +5,10 @@ This document describes a REST Api abstraction of this system.
 **Base url:** api/
 
 - users/
-  - [register](./01_Users/01_register.md)
+  - [register-user](./01_Users/01_register-user.md)
   - [validate](./01_Users/02_validate.md)
   - [authenticate](./01_Users/03_authenticate.md)
-  - [fetch](./01_Users/04_fetch.md)
+  - [fetch-data](./01_Users/04_fetch-data.md)
   - [update-photo](./01_Users/05_update-photo.md)
   - [update-info](./01_Users/06_update-info.md)
   - [update-credentials](./01_Users/07_update-credentials.md)
@@ -25,5 +25,6 @@ This document describes a REST Api abstraction of this system.
   - [fetch-one](./03_Posts/02_fetch-one.md)
   - [write](./03_Posts/03_write.md)
 - points/
+  - [fetch/:save-type](./04_Points/01_fetch.md)
   - wastes/
     - [fetch](./04_Points/01_Wastes/01_fetch.md)

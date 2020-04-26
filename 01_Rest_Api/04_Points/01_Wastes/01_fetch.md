@@ -2,7 +2,7 @@
 
 ## Description
 
-Fetch single post by it's id
+Get all waste types
 
 |    Note    | Value |
 | :--------: | :---: |
@@ -26,10 +26,11 @@ HTTP code: 200
   wastes: [
     // waste types
     {
+      id: 1,
       title: "waste-title",
       mark: "waste-mark",
       icon: "waste-icon",
-      saveType: "waste-saveType",
+      saveType: "trees,energy",
     }
   ]
 }
