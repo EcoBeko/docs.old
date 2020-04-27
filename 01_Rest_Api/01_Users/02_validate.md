@@ -11,15 +11,15 @@ Validates user credentials
 
 ## Request example
 
-| Parameter | Description                                                    |
-| :-------: | -------------------------------------------------------------- |
-|   phone   | String, following Kazakhstan's phone pattern (omitting prefix) |
-| password  | String, User's password                                        |
+| Parameter | Description               |
+| :-------: | ------------------------- |
+|   field   | String, field to validate |
+|   value   | Any, value to test        |
 
 ```js
 {
-  phone: "7086144672",
-  password: "some-password"
+  field: "phone",
+  value: "some-value"
 }
 ```
 
@@ -28,8 +28,7 @@ Validates user credentials
 | Response Status code | Description                    |
 | :------------------: | ------------------------------ |
 |         200          | Success                        |
-|         404          | User doesn't exists            |
-|         406          | Incorrect password             |
+|         400          | Fail                           |
 |         412          | Request conditions are not met |
 
 ### 200 - Success
@@ -41,21 +40,12 @@ Validates user credentials
 }
 ```
 
-### 404 - User doesn't exists
+### 400 - Fail
 
 ```js
 {
   status: false,
-  message: "User does not exists";
-}
-```
-
-### 406 - Incorrect password
-
-```js
-{
-  status: false,
-  message: "Password is incorrect"
+  message: "Validation failed";
 }
 ```
 

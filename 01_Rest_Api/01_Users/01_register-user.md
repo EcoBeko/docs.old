@@ -63,7 +63,7 @@ Register a new user
 ```js
 {
   status: false,
-  message: "Data validation error"
+  message: "Data validation error on field-name"
 }
 ```
 
