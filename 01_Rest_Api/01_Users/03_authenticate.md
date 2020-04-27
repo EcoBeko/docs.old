@@ -28,7 +28,7 @@ Validate user credentials and send access token
 | Response Status code | Description                    |
 | :------------------: | ------------------------------ |
 |         200          | Success                        |
-|         400          | Phone number exists            |
+|         404          | User not found                 |
 |         406          | Validation error               |
 |         412          | Request conditions are not met |
 
@@ -42,12 +42,12 @@ Validate user credentials and send access token
 }
 ```
 
-### 400 - Phone number exists
+### 404 - User not found
 
 ```js
 {
   status: false,
-  message: "Phone number already exists"
+  message: "User not found"
 }
 ```
 
