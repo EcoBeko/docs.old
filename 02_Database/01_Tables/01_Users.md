@@ -76,7 +76,6 @@
       <ul>
         <li>Varchar2 (10)</li>
         <li>Not Null</li>
-        <li>Unique</li>
         <li>Check for phone number</li>
       </ul>
     </td>

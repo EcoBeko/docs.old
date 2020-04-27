@@ -23,7 +23,6 @@
       <ul>
         <li>Varchar2 (50)</li>
         <li>Not Null</li>
-        <li>Unique</li>
       </ul>
     </td>
     <td>Point's title</td>

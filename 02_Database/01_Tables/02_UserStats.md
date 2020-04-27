@@ -23,7 +23,6 @@
       <ul>
         <li>Integer</li>
         <li>Not Null</li>
-        <li>Unique</li>
         <li>Foreign Key</li>
       </ul>
     </td>
