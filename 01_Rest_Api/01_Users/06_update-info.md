@@ -1,4 +1,4 @@
-# api/users/update (PUT)
+# api/users/update-info (PUT)
 
 ## Description
 
