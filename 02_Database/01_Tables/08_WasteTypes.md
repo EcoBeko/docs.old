@@ -1,5 +1,11 @@
 # Waste Types
 
+Type values:
+
+- energy
+- trees
+- both
+
 <table>
   <tr>
     <th>Columns</th>
@@ -28,14 +34,15 @@
     <td>Waste's title</td>
   </tr>
   <tr>
-    <td>types</td>
+    <td>type</td>
     <td>
       <ul>
         <li>Varchar2 (30)</li>
         <li>Not Null</li>
+        <li>Check</li>
       </ul>
     </td>
-    <td>Types, separated by comma</td>
+    <td>Type</td>
   </tr>
   <tr>
     <td>icon</td>
@@ -46,15 +53,5 @@
       </ul>
     </td>
     <td>Image hash sum</td>
-  </tr>
-  <tr>
-    <td>mark</td>
-    <td>
-      <ul>
-        <li>Varchar2 (20)</li>
-        <li>Not Null</li>
-      </ul>
-    </td>
-    <td>Waste's mark</td>
   </tr>
 </table>
