@@ -34,6 +34,7 @@ Update user's info
 |         200          | Updated                        |
 |         401          | No Token                       |
 |         403          | Unauthorized                   |
+|         406          | Validation error               |
 |         412          | Request conditions are not met |
 
 ### 200 - Updated
@@ -60,6 +61,15 @@ Update user's info
 {
   status: false,
   message: "Bad token"
+}
+```
+
+### 406 - Validation error
+
+```js
+{
+  status: false,
+  message: "Data validation error"
 }
 ```
 
