@@ -39,7 +39,7 @@
     <td>Amount of Trees saved</td>
   </tr>
   <tr>
-    <td>Energy</td>
+    <td>energy</td>
     <td>
       <ul>
         <li>Number</li>
