@@ -11,9 +11,9 @@ Update user's avatar
 
 ## Request example
 
-| Parameter | Description  |
-| :-------: | ------------ |
-|   file    | Avatar image |
+| Parameter | Description             |
+| :-------: | ----------------------- |
+|   file    | File, new user's avatar |
 
 ## Response examples
 
