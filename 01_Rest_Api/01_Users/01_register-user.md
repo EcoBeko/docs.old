@@ -1,4 +1,4 @@
-# api/users/register (POST)
+# api/users/register-user (POST)
 
 ## Description
 
