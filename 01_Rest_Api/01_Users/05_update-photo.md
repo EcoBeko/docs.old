@@ -11,15 +11,9 @@ Update user's avatar
 
 ## Request example
 
-| Parameter | Description                        |
-| :-------: | ---------------------------------- |
-|  avatar   | String, hash sum of the new avatar |
-
-```js
-{
-  avatar: "some-avatar",
-}
-```
+| Parameter | Description  |
+| :-------: | ------------ |
+|   file    | Avatar image |
 
 ## Response examples
 
