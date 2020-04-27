@@ -27,7 +27,7 @@ Register a new user
   password: "some-password",
   gender: 1,
   phone: "7086144672",
-  birthday: "19-01-2001"
+  birthday: "2001/01/19"
 }
 ```
 
