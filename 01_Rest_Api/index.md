@@ -18,7 +18,7 @@ This document describes a REST Api abstraction of this system.
     - [update](./01_Users/01_Friends/03_update.md)
   - stats/
     - [add](./01_Users/02_Stats/01_add.md)
-- tokens/
+- token/
   - [validate](./02_Token/01_validate.md)
 - posts/
   - [fetch-portion](./03_Posts/01_fetch-portion.md)
