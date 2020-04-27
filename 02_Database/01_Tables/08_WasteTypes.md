@@ -5,6 +5,7 @@ Type values:
 - energy
 - trees
 - both
+- none
 
 <table>
   <tr>
