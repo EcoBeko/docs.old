@@ -22,11 +22,14 @@ Fetch user data for the specified user
 ```js
 {
   status: true,
-  message: "Token created",
+  message: "Data fetched",
   user: {
+    id: 1,
     name: "user-name",
     surname: "user-surname",
-    role: "user-role",
+    modules: {
+      name: "user"
+    }
     gender: 1,
     phone: "user-phone",
     avatar: "user-avatar",
