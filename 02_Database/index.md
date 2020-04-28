@@ -22,3 +22,4 @@ This document describes a database scheme and constraints.
 - [Relationships](./02_Views/02_relationships.md)
 - [Post owners](./02_Views/03_post_owners.md)
 - [Comments owners](./02_Views/04_comments_owner.md)
+- [Point accepting list](./02_Views/05_point_accepting_list.md)
