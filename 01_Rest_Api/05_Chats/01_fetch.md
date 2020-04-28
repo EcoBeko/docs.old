@@ -22,7 +22,17 @@ Fetch all user chats
 ```js
 {
   status: true,
-  message: "Success"
+  message: "Success",
+  chats: [
+    // chats
+    {
+      id: 1,
+      last_time: "time",
+      name: "friends-name",
+      surname: "friends-surname",
+      avatar: "friends-avatar"
+    }
+  ]
 }
 ```
 
