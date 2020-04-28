@@ -1,4 +1,4 @@
-# api/chats/fetch-chat/:id (GET)
+# api/chats/:chat-id/fetch (GET)
 
 ## Description
 
@@ -16,7 +16,7 @@ Retrieving chat messages
 |    :id    | Integer, friend's relationship id |
 
 ```http
-http://domain.name/api/fetch-chat/12
+http://domain.name/api/chats/12/fetch
 ```
 
 ## Response examples

@@ -33,4 +33,7 @@ This document describes a REST Api abstraction of this system.
   - wastes/
     - [fetch](./04_Points/01_Wastes/01_fetch.md)
 - chats/
-  - [fetch-chat/:id](./05_Chats/01_fetch-chat.md)
+  - [fetch](./05_Chats/01_fetch.md)
+  - :chat-id/
+    - [fetch](./05_Chats/01_chat/01_fetch.md)
+    - [write](./05_Chats/01_chat/02_write.md)
