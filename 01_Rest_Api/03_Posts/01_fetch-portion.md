@@ -25,21 +25,10 @@ Fetch limited amount of posts
 
 | Response Status code | Description                     |
 | :------------------: | ------------------------------- |
-|         204          | No rows left                    |
 |         206          | Success                         |
 |         401          | No token presented              |
 |         403          | Token presented, but is invalid |
 |         412          | Request conditions are not met  |
-
-### 204 - No rows
-
-```js
-{
-  status: true,
-  message: "No rows left"
-  posts: []
-}
-```
 
 ### 206 - Success
 
