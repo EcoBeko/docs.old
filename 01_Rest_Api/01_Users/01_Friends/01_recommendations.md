@@ -11,12 +11,11 @@ Get friends recommendations for user
 
 ## Response examples
 
-| Response Status code | Description      |
-| :------------------: | ---------------- |
-|         200          | Success          |
-|         204          | No close friends |
-|         401          | No token         |
-|         403          | Unauthorized     |
+| Response Status code | Description  |
+| :------------------: | ------------ |
+|         200          | Success      |
+|         401          | No token     |
+|         403          | Unauthorized |
 
 ### 200 - Success
 
@@ -26,24 +25,6 @@ Get friends recommendations for user
   message: "Success",
   users: [
     // closely related users
-    {
-      name: "user-name",
-      surname: "user-surname",
-      phone: "user-phone",
-      avatar: "user-avatar",
-    }
-  ]
-}
-```
-
-### 204 - No close friends
-
-```js
-{
-  status: true,
-  message: "No close friends"
-  users: [
-    // random users
     {
       name: "user-name",
       surname: "user-surname",
