@@ -29,7 +29,6 @@ Get points by their type (recycle, utilization)
 | Response Status code | Description                    |
 | :------------------: | ------------------------------ |
 |         200          | Success                        |
-|         204          | No content                     |
 |         412          | Request conditions are not met |
 
 ### 200 - Success
@@ -53,18 +52,6 @@ Get points by their type (recycle, utilization)
       latitude: 83.10,
       icon: "point-icon"
     }
-  ]
-}
-```
-
-### 204 - No Content
-
-```js
-{
-  status: true,
-  message: "No Content"
-  points: [
-    // no results
   ]
 }
 ```
