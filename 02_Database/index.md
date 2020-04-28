@@ -21,4 +21,4 @@ This document describes a database scheme and constraints.
 - [User with stats](./02_Views/01_user_with_stats.md)
 - [Relationships](./02_Views/02_relationships.md)
 - [Post owners](./02_Views/03_post_owners.md)
--
+- [Comments owners]
