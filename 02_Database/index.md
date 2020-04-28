@@ -15,3 +15,10 @@ This document describes a database scheme and constraints.
 - [Points](./01_Tables/07_Points.md)
 - [Waste Types](./01_Tables/08_WasteTypes.md)
 - [Point Accepts](./01_Tables/09_PointAccepts.md)
+
+## Views
+
+- [User with stats](./02_Views/01_user_with_stats.md)
+- [Relationships](./02_Views/02_relationships.md)
+- [Post owners](./02_Views/03_post_owners.md)
+-
