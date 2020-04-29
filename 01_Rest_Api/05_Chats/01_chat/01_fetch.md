@@ -34,13 +34,6 @@ http://domain.name/api/chats/12/fetch
 {
   status: true,
   message: "Success",
-  friend: {
-    name: "friend-name",
-    surname: "friend-surname",
-    phone: "friend-phone",
-    avatar: "friend-avatar",
-    lastTime: "last-time"
-  },
   messages: [
     // list of messages sorted by timestamp
     {
