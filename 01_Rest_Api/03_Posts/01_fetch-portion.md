@@ -1,4 +1,4 @@
-# api/posts/fetch-portion (GET)
+# api/posts/fetch-portion/:offset (GET)
 
 ## Description
 
@@ -13,13 +13,7 @@ Fetch limited amount of posts
 
 | Parameter | Description             |
 | :-------: | ----------------------- |
-|  offset   | Fetch offset, default 0 |
-
-```js
-{
-  offset: 3,
-}
-```
+|  :offset   | Fetch offset           |
 
 ## Response examples
 
